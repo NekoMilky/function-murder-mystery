@@ -1,0 +1,1 @@
+$data modify entity @s $(resolve_path).with set value ["$(count)"]

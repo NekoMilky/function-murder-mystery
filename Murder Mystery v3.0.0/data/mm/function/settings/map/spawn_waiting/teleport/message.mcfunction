@@ -1,0 +1,1 @@
+$tellraw @s {"translate":"mm.feedback.map.spawn_waiting.teleport.success","color":"yellow","with":[{"text":"$(map_name)"}]}

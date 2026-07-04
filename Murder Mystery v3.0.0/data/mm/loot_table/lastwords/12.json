@@ -1,0 +1,74 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "translate": "mm.lastwords.12.1",
+                  "color": "white"
+                }
+              ],
+              "target": "custom_name"
+            }
+          ],
+          "type": "minecraft:item",
+          "name": "minecraft:barrier"
+        },
+        {
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "translate": "mm.lastwords.12.2",
+                  "color": "white"
+                }
+              ],
+              "target": "custom_name"
+            }
+          ],
+          "type": "minecraft:item",
+          "name": "minecraft:barrier"
+        },
+        {
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "translate": "mm.lastwords.12.3",
+                  "color": "white"
+                }
+              ],
+              "target": "custom_name"
+            }
+          ],
+          "type": "minecraft:item",
+          "name": "minecraft:barrier"
+        },
+        {
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "translate": "mm.lastwords.12.4",
+                  "color": "white"
+                }
+              ],
+              "target": "custom_name"
+            }
+          ],
+          "type": "minecraft:item",
+          "name": "minecraft:barrier"
+        }
+      ]
+    }
+  ]
+}

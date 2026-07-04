@@ -1,0 +1,1 @@
+$data modify storage mm:main $(path) set value "$(string_1)$(string_2)"

@@ -1,0 +1,28 @@
+{
+  "anvil_cost": 1,
+  "description": "",
+  "effects": {
+    "post_piercing_attack": [
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "mm:gun/reload/main"
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 1
+  },
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 1
+  },
+  "max_level": 1,
+  "slots": [
+    "any"
+  ],
+  "supported_items": [],
+  "weight": 1
+}

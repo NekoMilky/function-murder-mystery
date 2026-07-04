@@ -1,0 +1,59 @@
+{
+  "criteria": {
+    "mm": {
+	  "trigger": "player_hurt_entity",
+	  "conditions": {
+	    "entity": {
+		  "nbt": "{Tags:[\"mm_innocent\"]}",
+		  "distance": {
+		    "absolute": {
+			  "min": 0.0001
+			}
+		  }
+		},
+		"player": [
+		  {
+		    "condition": "entity_properties",
+			"entity": "this",
+			"predicate": {
+			  "nbt": "{Tags:[\"mm_innocent\"]}"
+			}
+		  },
+		  {
+			"condition": "inverted",
+			"term": {
+			  "condition": "minecraft:entity_properties",
+			  "entity": "this",
+			  "predicate": {
+				"nbt": "{Tags:[\"mm_dead\"]}"
+			  }
+			}
+		  },
+		  {
+			"condition": "inverted",
+			"term": {
+			  "condition": "minecraft:entity_properties",
+			  "entity": "this",
+			  "predicate": {
+				"nbt": "{Tags:[\"mm_spectator\"]}"
+			  }
+			}
+		  },
+		  {
+			"condition": "inverted",
+			"term": {
+			  "condition": "minecraft:entity_properties",
+			  "entity": "this",
+			  "predicate": {
+				"nbt": "{Tags:[\"mm_will_respawn\"]}"
+			  }
+			}
+		  }
+		]
+	  }
+	}
+  },
+  "rewards": {
+    "function": "mm:game/game_events/kill/innocent_as_innocent"
+  }
+}

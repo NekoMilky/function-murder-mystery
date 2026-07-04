@@ -1,0 +1,1 @@
+playsound minecraft:entity.firework_rocket.large_blast player @s ~ ~ ~ 1 2

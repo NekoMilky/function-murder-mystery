@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "functions": [
+        {
+          "function": "minecraft:set_custom_data",
+          "tag": "{AlphaChestplate: 1}"
+        },
+        {
+          "function": "minecraft:set_components",
+          "components": {
+            "minecraft:unbreakable": {}
+          }
+        },
+        {
+          "function": "minecraft:set_name",
+          "name": {
+            "translate": "mm.item.fake_iron_chestplate",
+            "color": "red",
+            "italic": false
+          },
+          "target": "custom_name"
+        },
+        {
+          "function": "minecraft:set_lore",
+          "mode": "replace_all",
+          "lore": [
+            {
+              "translate": "mm.item.fake_iron_chestplate.description",
+              "color": "white",
+              "italic": false
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_chestplate"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:generic",
+  "functions": [
+    {
+      "function": "minecraft:set_custom_data",
+      "tag": "{Bow: 1, InfiniteBow:1}"
+    },
+    {
+      "function": "minecraft:set_components",
+      "components": {
+        "minecraft:enchantments": {
+          "minecraft:infinity": 1
+        }
+      }
+    }
+  ],
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "mm:bow"
+        }
+      ]
+    }
+  ]
+}

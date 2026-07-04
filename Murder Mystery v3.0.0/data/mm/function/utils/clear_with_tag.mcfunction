@@ -1,0 +1,1 @@
+$clear @s *[minecraft:custom_data~{$(item_tag):1}] $(max_count)

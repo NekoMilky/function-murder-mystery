@@ -1,0 +1,14 @@
+{
+  "function": "minecraft:copy_custom_data",
+  "ops": [
+    {
+      "op": "replace",
+      "source": "Inventory[{Slot:35b}].components.\"minecraft:custom_name\".insertion",
+      "target": "owner"
+    }
+  ],
+  "source": {
+    "type": "context",
+    "target": "this"
+  }
+}

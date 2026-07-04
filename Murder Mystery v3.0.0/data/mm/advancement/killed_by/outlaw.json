@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "mm": {
+	  "trigger": "entity_hurt_player",
+	  "conditions": {
+	    "damage": {
+		  "source_entity": {
+		    "nbt": "{Tags:[\"mm_outlaw\",\"mm_alive\"]}"
+		  }
+		}
+	  }
+	}
+  },
+  "rewards": {
+    "function": "mm:game/game_events/killed_by/outlaw"
+  }
+}

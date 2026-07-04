@@ -1,0 +1,58 @@
+{
+  "criteria": {
+    "mm": {
+	  "trigger": "player_hurt_entity",
+	  "conditions": {
+	    "damage": {
+		  "type":{
+		    "is_projectile": true
+	      }
+		},
+	    "entity": {
+		  "distance": {
+	        "absolute": {
+		      "min": 0,
+			  "max": 0
+			}
+		  },
+		  "type": "minecraft:player"
+		},
+		"player": [
+		  {
+			"condition": "inverted",
+			"term": {
+			  "condition": "minecraft:entity_properties",
+			  "entity": "this",
+			  "predicate": {
+				"nbt": "{Tags:[\"mm_dead\"]}"
+			  }
+			}
+		  },
+		  {
+			"condition": "inverted",
+			"term": {
+			  "condition": "minecraft:entity_properties",
+			  "entity": "this",
+			  "predicate": {
+				"nbt": "{Tags:[\"mm_spectator\"]}"
+			  }
+			}
+		  },
+		  {
+			"condition": "inverted",
+			"term": {
+			  "condition": "minecraft:entity_properties",
+			  "entity": "this",
+			  "predicate": {
+				"nbt": "{Tags:[\"mm_will_respawn\"]}"
+			  }
+			}
+		  }			
+		]
+	  }
+	}
+  },
+  "rewards": {
+    "function": "mm:game/game_events/kill/self"
+  }
+}

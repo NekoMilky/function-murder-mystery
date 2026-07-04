@@ -1,0 +1,1 @@
+$summon armor_stand $(x) $(y) $(z) {Tags:["mm_spawn"],Rotation:[$(rotation),0]}

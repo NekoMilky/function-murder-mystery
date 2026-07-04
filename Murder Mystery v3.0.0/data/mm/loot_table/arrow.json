@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:arrow",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "this_arrow_count"
+                },
+                "score": "mm_main"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

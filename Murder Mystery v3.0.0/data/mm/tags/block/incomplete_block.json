@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:air",
+    "#minecraft:pressure_plates",
+    "#minecraft:slabs",
+    "#minecraft:signs",
+    "#minecraft:fences",
+    "#minecraft:fire",
+    "#minecraft:fence_gates",
+    "#minecraft:doors",
+    "#minecraft:trapdoors",
+    "#minecraft:stairs",
+    "#minecraft:flowers",
+    "#minecraft:buttons",
+    "#minecraft:walls",
+
+    "#mm:incomplete_block/carpets",
+    "#mm:incomplete_block/glass_panes",
+
+    "minecraft:bubble_column",
+    "minecraft:water",
+    "minecraft:lava",
+    "minecraft:barrier",
+    "minecraft:vine",
+    "minecraft:ladder",
+    "minecraft:iron_bars",
+    "minecraft:rail",
+    "minecraft:activator_rail",
+    "minecraft:detector_rail",
+    "minecraft:powered_rail"
+  ]
+}

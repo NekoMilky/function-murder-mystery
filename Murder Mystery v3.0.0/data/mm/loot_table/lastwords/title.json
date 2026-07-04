@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:barrier",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "mm.lastwords.title",
+                "color": "yellow",
+                "italic": false,
+                "with": [
+                  {
+                    "selector": "@s",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              },
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{Lastwords: 1, LastwordsTitle: 1}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

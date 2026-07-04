@@ -1,0 +1,3 @@
+execute as @a[tag=mm_playing,tag=!mm_using_features,scores={mm_safe_tick=-1},tag=!mm_dead,tag=!mm_spectator] run function mm:utils/run_command_at_spawn/main {callback:"function mm:utils/teleport with storage mm:main temporary"}
+
+tellraw @a[tag=mm_playing] {"translate":"mm.text.prop.active.others","color":"green","with":[{"translate":"mm.text_settings.play.mode_features.prop_enable.8","color":"dark_purple","bold":true},{"translate":"mm.text.prop.8.active","color":"green"}]}

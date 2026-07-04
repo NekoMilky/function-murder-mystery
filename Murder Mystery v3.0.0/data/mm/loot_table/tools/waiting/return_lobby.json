@@ -1,0 +1,48 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "functions": [
+        {
+          "function": "minecraft:set_custom_data",
+          "tag": "{Menu:1, ReturnLobby: 1}"
+        },
+        {
+          "function": "minecraft:set_name",
+          "name": {
+            "translate": "mm.item.return_lobby",
+            "color": "red",
+            "italic": false
+          },
+          "target": "custom_name"
+        },
+        {
+          "function": "minecraft:set_lore",
+          "mode": "replace_all",
+          "lore": [
+            {
+              "translate": "mm.item.return_lobby.description",
+              "color": "white",
+              "italic": false
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:red_bed"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

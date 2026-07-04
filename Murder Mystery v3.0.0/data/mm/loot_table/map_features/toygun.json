@@ -1,0 +1,59 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "functions": [
+        {
+          "function": "minecraft:set_custom_data",
+          "tag": "{MapFeatures: 1, Toygun: 1, ItemTag: \"Toygun\", LootTable: \"mm:map_features/toygun\"}"
+        },
+        {
+          "function": "minecraft:set_name",
+          "name": {
+            "translate": "mm.text_settings.map.map_features.toygun",
+            "color": "green",
+            "italic": false
+          },
+          "target": "custom_name"
+        },
+        {
+          "function": "minecraft:set_lore",
+          "mode": "replace_all",
+          "lore": [
+            {
+              "translate": "mm.text_settings.map.map_features.toygun.description",
+              "color": "white",
+              "italic": false
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_components",
+          "components": {
+            "!minecraft:max_damage": {},
+            "minecraft:max_stack_size": 64,
+            "minecraft:item_model": "minecraft:firework_star"
+          }
+        },
+        {
+          "function": "minecraft:set_count",
+          "count": {
+            "type": "score",
+            "target": {
+              "type": "fixed",
+              "name": "count_value"
+            },
+            "score": "mm_main"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick"
+        }
+      ]
+    }
+  ]
+}

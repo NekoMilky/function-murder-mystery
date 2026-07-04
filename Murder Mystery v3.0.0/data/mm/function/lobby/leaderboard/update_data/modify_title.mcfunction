@@ -1,0 +1,1 @@
+$execute at @s positioned ~ ~4.5 ~ run data modify entity @n[tag=mm_leaderboard,tag=mm_title] CustomName.with[0].translate set value "mm.text_leaderboard.title.$(stats_index)"

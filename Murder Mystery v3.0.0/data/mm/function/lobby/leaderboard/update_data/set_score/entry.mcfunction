@@ -1,0 +1,1 @@
+$scoreboard players operation $(name) mm_temporary = $(name) mm_stats_$(stats_index)

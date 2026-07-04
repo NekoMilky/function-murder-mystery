@@ -1,0 +1,2 @@
+$execute unless data storage mm:main map.maps[$(index)].$(path) run function mm:utils/set_map_data {index:$(index),path:$(path),value:[]}
+$data modify storage mm:main map.maps[$(index)].$(path) append value $(value)

@@ -1,0 +1,48 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "functions": [
+        {
+          "function": "minecraft:set_custom_data",
+          "tag": "{MapFeatures: 1, MarsPotion: 1, ItemTag: \"MarsPotion\", LootTable: \"mm:map_features/mars_potion\"}"
+        },
+        {
+          "function": "minecraft:set_components",
+          "components": {
+            "minecraft:potion_contents": {
+              "custom_color": 15296298
+            }
+          }
+        },
+        {
+          "function": "minecraft:set_name",
+          "name": {
+            "translate": "mm.text_settings.map.map_features.mars_potion",
+            "color": "green",
+            "italic": false
+          },
+          "target": "custom_name"
+        },
+        {
+          "function": "minecraft:set_lore",
+          "mode": "replace_all",
+          "lore": [
+            {
+              "translate": "mm.text_settings.map.map_features.mars_potion.description",
+              "color": "white",
+              "italic": false
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion"
+        }
+      ]
+    }
+  ]
+}

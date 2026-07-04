@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:barrier",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "selector": "@s",
+                "italic": false
+              },
+              "entity": "this",
+              "target": "custom_name"
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{Name: 1}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

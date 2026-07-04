@@ -1,0 +1,2 @@
+$execute if items entity @s container.* *[minecraft:custom_data~{$(search_tags)}] run return run data get entity @s Inventory[{components:{"minecraft:custom_data":{$(search_tags)}}}].components."minecraft:custom_data".$(target_tag)
+return 0

@@ -1,0 +1,53 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:compass",
+          "functions": [
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{Tracker: 1}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "mm.item.alpha_tracker",
+                "color": "red",
+                "italic": false
+              },
+              "target": "custom_name"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                {
+                  "translate": "mm.item.alpha_tracker.description",
+                  "color": "white",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:lodestone_tracker": {
+                  "target": {
+                    "dimension": "overworld",
+                    "pos": [0, 0, 0]
+                  },
+                  "tracked": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+playsound minecraft:entity.iron_golem.hurt player @s ~ ~ ~ 1 2

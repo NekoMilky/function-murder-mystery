@@ -1,0 +1,1 @@
+$data modify storage mm:main map.maps[$(index)].Name set value "$(map_name)"

@@ -1,0 +1,1 @@
+function mm:dialog/settings/main

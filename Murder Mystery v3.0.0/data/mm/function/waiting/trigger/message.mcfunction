@@ -1,0 +1,2 @@
+$tellraw @a[tag=mm_playing] {"translate":"mm.text.game_will_start.$(type)","color":"yellow","with":[{"text":"$(second)","color":"$(color)"}]}
+execute as @a[tag=mm_playing] at @s run playsound minecraft:block.note_block.hat player @s ~ ~ ~ 1 1

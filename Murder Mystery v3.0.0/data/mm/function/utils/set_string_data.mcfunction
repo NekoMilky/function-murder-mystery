@@ -1,0 +1,1 @@
+$data modify $(type) $(target) $(path) set value "$(value)"

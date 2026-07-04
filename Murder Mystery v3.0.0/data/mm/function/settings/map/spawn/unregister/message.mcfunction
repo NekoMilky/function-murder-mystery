@@ -1,0 +1,1 @@
+$tellraw @s {"translate":"mm.feedback.map.spawn.unregister.success","color":"yellow","with":[{"text":"$(map_name)"}]}

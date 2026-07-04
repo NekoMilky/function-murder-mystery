@@ -1,0 +1,1 @@
+$function mm:lobby/menu/common/self {slot:$(slot),loot_table:"mm:menu/game/map_select/$(type)",item_tag:"$(item_tag)",menu:$(page)}

@@ -1,0 +1,1 @@
+$tellraw @s {"translate":"mm.feedback.map.weather.set.success","color":"yellow","with":[{"text":"$(map_name)"},{"translate":"mm.text_settings.map.weather.$(weather_name)","color":"green"}]}

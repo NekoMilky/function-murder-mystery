@@ -1,0 +1,61 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "functions": [
+        {
+          "function": "minecraft:set_custom_data",
+          "tag": "{Menu:1, Play: 1}"
+        },
+        {
+          "function": "minecraft:set_name",
+          "name": {
+            "translate": "mm.text.datapack.name",
+            "color": "green",
+            "italic": false
+          },
+          "target": "custom_name"
+        },
+        {
+          "function": "minecraft:set_lore",
+          "mode": "replace_all",
+          "lore": [
+            {
+              "translate": "mm.text.current_playing.single",
+              "color": "yellow",
+              "italic": false,
+              "with": [
+                {
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "translate": "mm.scoreboard.key.running_status",
+              "color": "yellow",
+              "italic": false,
+              "with": [
+                {
+                  "translate":"mm.scoreboard.value.none",
+                  "color":"red"
+                }
+              ]
+            },
+            {
+              "translate": "mm.menu.game.home.play.description",
+              "color": "white",
+              "italic": false
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bow"
+        }
+      ]
+    }
+  ]
+}

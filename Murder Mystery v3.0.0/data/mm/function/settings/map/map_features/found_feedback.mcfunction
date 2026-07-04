@@ -1,0 +1,1 @@
+$tellraw @s {"translate":"mm.feedback.map.map_features.fail.found","color":"red","with":[{"translate":"mm.text_settings.map.map_features.$(name)","color":"red"}]}

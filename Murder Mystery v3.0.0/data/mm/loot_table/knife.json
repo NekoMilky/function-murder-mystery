@@ -1,0 +1,157 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "functions": [
+        {
+          "function": "minecraft:set_custom_data",
+          "tag": "{Knife: 1}"
+        },
+        {
+          "function": "minecraft:set_components",
+          "components": {
+            "minecraft:unbreakable": {}
+          }
+        },
+        {
+          "function": "minecraft:set_name",
+          "name": {
+            "translate": "mm.item.knife",
+            "color": "green",
+            "italic": false
+          },
+          "target": "custom_name"
+        },
+        {
+          "function": "minecraft:set_lore",
+          "mode": "replace_all",
+          "lore": [
+            {
+              "translate": "mm.item.knife.description",
+              "color": "white",
+              "italic": false
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_attributes",
+          "modifiers": [
+            {
+              "id": "minecraft:attack_damage",
+              "attribute": "minecraft:attack_damage",
+              "slot": "mainhand",
+              "amount": 5,
+              "operation": "add_value"
+            },
+            {
+              "id": "minecraft:attack_speed",
+              "attribute": "minecraft:attack_speed",
+              "slot": "mainhand",
+              "amount": 1024,
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "mm_knife_skin": {
+                  "min": 1,
+                  "max": 10
+                }
+              }
+            }
+          ],
+          "type": "loot_table",
+          "value": "mm:knife/1_to_10"
+        },
+        {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "mm_knife_skin": {
+                  "min": 11,
+                  "max": 20
+                }
+              }
+            }
+          ],
+          "type": "loot_table",
+          "value": "mm:knife/11_to_20"
+        },
+        {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "mm_knife_skin": {
+                  "min": 21,
+                  "max": 30
+                }
+              }
+            }
+          ],
+          "type": "loot_table",
+          "value": "mm:knife/21_to_30"
+        },
+        {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "mm_knife_skin": {
+                  "min": 31,
+                  "max": 40
+                }
+              }
+            }
+          ],
+          "type": "loot_table",
+          "value": "mm:knife/31_to_40"
+        },
+        {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "mm_knife_skin": {
+                  "min": 41,
+                  "max": 50
+                }
+              }
+            }
+          ],
+          "type": "loot_table",
+          "value": "mm:knife/41_to_50"
+        },
+        {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "mm_knife_skin": {
+                  "min": 51,
+                  "max": 60
+                }
+              }
+            }
+          ],
+          "type": "loot_table",
+          "value": "mm:knife/51_to_60"
+        }
+      ]
+    }
+  ]
+}

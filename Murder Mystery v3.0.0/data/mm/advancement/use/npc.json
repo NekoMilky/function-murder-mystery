@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "example": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"mm_special_element\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mm:game/game_events/use/npc"
+  }
+}

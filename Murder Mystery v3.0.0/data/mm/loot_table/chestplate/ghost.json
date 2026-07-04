@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "functions": [
+        {
+          "function": "minecraft:set_custom_data",
+          "tag": "{GhostChestplate: 1}"
+        },
+        {
+          "function": "minecraft:set_components",
+          "components": {
+            "minecraft:unbreakable": {},
+            "minecraft:dyed_color": 65536
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_chestplate"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:generic",
+  "functions": [
+    {
+      "function": "minecraft:set_custom_data",
+      "tag": "{RandomProp: 1}"
+    }
+  ],
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "mm:random_prop/wood_cutter"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mm:random_prop/mysterious_potion"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mm:random_prop/damage_potion"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mm:random_prop/crossbow"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mm:random_prop/gold_medal"
+        }
+      ]
+    }
+  ]
+}

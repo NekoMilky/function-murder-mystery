@@ -1,0 +1,167 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "conditions": [
+                {
+                  "condition": "entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "mm_knife_skin": 31
+                  }
+                }
+              ],
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:glistering_melon_slice"
+              }
+            },
+            {
+              "conditions": [
+                {
+                  "condition": "entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "mm_knife_skin": 32
+                  }
+                }
+              ],
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:prismarine_shard",
+                "minecraft:enchantment_glint_override": true
+              }
+            },
+            {
+              "conditions": [
+                {
+                  "condition": "entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "mm_knife_skin": 33
+                  }
+                }
+              ],
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:tnt"
+              }
+            },
+            {
+              "conditions": [
+                {
+                  "condition": "entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "mm_knife_skin": 34
+                  }
+                }
+              ],
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:cooked_beef"
+              }
+            },
+            {
+              "conditions": [
+                {
+                  "condition": "entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "mm_knife_skin": 35
+                  }
+                }
+              ],
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:quartz"
+              }
+            },
+            {
+              "conditions": [
+                {
+                  "condition": "entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "mm_knife_skin": 36
+                  }
+                }
+              ],
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:bread"
+              }
+            },
+            {
+              "conditions": [
+                {
+                  "condition": "entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "mm_knife_skin": 37
+                  }
+                }
+              ],
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:nether_star"
+              }
+            },
+            {
+              "conditions": [
+                {
+                  "condition": "entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "mm_knife_skin": 38
+                  }
+                }
+              ],
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:brick"
+              }
+            },
+            {
+              "conditions": [
+                {
+                  "condition": "entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "mm_knife_skin": 39
+                  }
+                }
+              ],
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:book"
+              }
+            },
+            {
+              "conditions": [
+                {
+                  "condition": "entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "mm_knife_skin": 40
+                  }
+                }
+              ],
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:fire_charge"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

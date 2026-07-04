@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "mm.item.totem_of_undying",
+                "color": "yellow",
+                "italic": false
+              },
+              "target": "custom_name"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                {
+                  "translate": "mm.item.totem_of_undying.description",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "translate": "mm.item.overall_description.can_be_only_used_once",
+                  "color": "red",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{GoldMedal: 1}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

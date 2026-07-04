@@ -1,0 +1,1 @@
+execute as @s[tag=mm_monorail_spawner,tag=mm_special_element] at @s unless block ~1 ~ ~ powered_rail unless block ~-1 ~ ~ powered_rail unless block ~ ~ ~1 powered_rail unless block ~ ~ ~-1 powered_rail unless block ~ ~1 ~ powered_rail unless block ~ ~-1 ~ powered_rail run tag @s add mm_destroyed

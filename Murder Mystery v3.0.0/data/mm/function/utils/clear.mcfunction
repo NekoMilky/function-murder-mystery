@@ -1,0 +1,1 @@
+$clear @s minecraft:$(id) $(max_count)

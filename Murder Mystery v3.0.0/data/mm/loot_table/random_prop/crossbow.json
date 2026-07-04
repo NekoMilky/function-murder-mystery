@@ -1,0 +1,60 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:crossbow",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "mm.item.crossbow",
+                "color": "gold",
+                "italic": false
+              },
+              "target": "custom_name"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                {
+                  "translate": "mm.item.overall_description.can_be_only_used_once",
+                  "color": "red",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{Crossbow: 1}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:damage": 464,
+                "minecraft:enchantments": {
+                  "minecraft:multishot": 3
+                },
+                "minecraft:charged_projectiles": [
+                  {
+                    "id": "minecraft:arrow"
+                  },
+                  {
+                    "id": "minecraft:arrow"
+                  },
+                  {
+                    "id": "minecraft:arrow"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

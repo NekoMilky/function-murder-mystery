@@ -1,0 +1,81 @@
+{
+  "type": "minecraft:generic",
+  "functions": [
+    {
+      "function": "minecraft:set_custom_data",
+      "tag": "{Bow: 1}"
+    }
+  ],
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "conditions": [
+            {
+              "condition": "entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"mm_alpha\"]}"
+              }
+            }
+          ],
+          "type": "minecraft:loot_table",
+          "value": "mm:bow/fake"
+        },
+        {
+          "conditions": [
+            {
+              "condition": "entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"mm_survivor\"]}"
+              }
+            }
+          ],
+          "type": "minecraft:loot_table",
+          "value": "mm:bow/kill_infected_or_ghost"
+        },
+        {
+          "conditions": [
+            {
+              "condition": "entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"mm_innocent\"]}"
+              }
+            }
+          ],
+          "type": "minecraft:loot_table",
+          "value": "mm:bow/kill_murderer"
+        },
+        {
+          "conditions": [
+            {
+              "condition": "any_of",
+              "terms": [
+                {
+                  "condition": "entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "nbt": "{Tags:[\"mm_murderer\"]}"
+                  }
+                },
+                {
+                  "condition": "reference",
+                  "name": "mm:human_and_robot"
+                },
+                {
+                  "condition": "reference",
+                  "name": "mm:outlaw_and_sheriff"
+                }
+              ]
+            }
+          ],
+          "type": "minecraft:loot_table",
+          "value": "mm:bow/kill_others"
+        }
+      ]
+    }
+  ]
+}

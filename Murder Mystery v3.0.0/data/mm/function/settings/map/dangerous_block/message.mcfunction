@@ -1,0 +1,1 @@
+$tellraw @s {"translate":"mm.feedback.map.dangerous_block.set.success","color":"yellow","with":[{"text":"$(map_name)"},{"translate":"mm.text_settings.map.dangerous_block.$(danger_type)"},{"translate":"mm.text_settings.map.dangerous_block.$(lethality_type)","color":"$(color)"}]}

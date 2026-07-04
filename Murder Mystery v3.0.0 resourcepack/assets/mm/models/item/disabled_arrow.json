@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0":"minecraft:item/arrow",
+    "layer1":"mm:item/red_overlay"
+  }
+}

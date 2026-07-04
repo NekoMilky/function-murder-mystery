@@ -1,0 +1,1 @@
+$execute if data storage mm:main map.maps[$(index)].$(source_path) run data modify storage mm:main $(path) set from storage mm:main map.maps[$(index)].$(source_path)

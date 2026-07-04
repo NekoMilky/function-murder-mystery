@@ -1,0 +1,7 @@
+﻿{
+    "pack": {
+        "description": {"text": "A Murder Mystery minigame datapack by NaiveMilky", "color": "light_purple"},
+        "min_format": 75,
+        "max_format": 9999
+    }
+}

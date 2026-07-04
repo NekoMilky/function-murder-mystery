@@ -1,0 +1,81 @@
+{
+  "type": "minecraft:generic",
+  "functions": [
+    {
+      "function": "minecraft:set_custom_data",
+      "tag": "{Chestplate: 1}"
+    }
+  ],
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "conditions": [
+            {
+              "condition": "entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"mm_ghost\"]}"
+              }
+            }
+          ],
+          "type": "minecraft:loot_table",
+          "value": "mm:chestplate/ghost"
+        },
+        {
+          "conditions": [
+            {
+              "condition": "entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"mm_alpha\"]}"
+              }
+            }
+          ],
+          "type": "minecraft:loot_table",
+          "value": "mm:chestplate/alpha"
+        },
+        {
+          "conditions": [
+            {
+              "condition": "entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"mm_outlaw\"]}"
+              }
+            }
+          ],
+          "type": "minecraft:loot_table",
+          "value": "mm:chestplate/outlaw"
+        },
+        {
+          "conditions": [
+            {
+              "condition": "entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"mm_sheriff\"]}"
+              }
+            }
+          ],
+          "type": "minecraft:loot_table",
+          "value": "mm:chestplate/sheriff"
+        },
+        {
+          "conditions": [
+            {
+              "condition": "entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"mm_survivor\"]}"
+              }
+            }
+          ],
+          "type": "minecraft:loot_table",
+          "value": "mm:chestplate/survivor"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+$data modify entity @s Items[{Slot:10b}].components."minecraft:lore"[1].with set value [{"text":"$(map_name)","color":"green"}]

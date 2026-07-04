@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "mm": {
+      "trigger": "any_block_use",
+      "conditions": {
+        "location": [
+          {
+            "condition": "location_check",
+            "predicate": {
+              "block": {
+                "blocks": "#minecraft:buttons"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "mm:game/game_events/use/button"
+  }
+}

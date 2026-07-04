@@ -1,0 +1,26 @@
+{
+  "criteria": {
+    "mm": {
+	  "trigger": "entity_hurt_player",
+	  "conditions": {
+	    "damage": {
+		  "source_entity": {
+		    "nbt": "{Tags:[\"mm_infected\",\"mm_alive\"]}"
+		  }
+		},
+		"player": [
+		  {
+		    "condition": "entity_properties",
+			"entity": "this",
+			"predicate": {
+			  "nbt": "{Tags:[\"mm_survivor\"]}"		
+            }			  
+		  }
+		]
+	  }
+	}
+  },
+  "rewards": {
+    "function": "mm:game/game_events/killed_by/infected"
+  }
+}

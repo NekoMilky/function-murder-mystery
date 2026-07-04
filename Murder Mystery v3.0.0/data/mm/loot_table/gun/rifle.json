@@ -1,0 +1,130 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "functions": [
+        {
+          "function": "minecraft:set_custom_data",
+          "tag": "{Gun: 1, type:\"rifle\"}"
+        },
+        {
+          "function": "minecraft:set_components",
+          "components": {
+            "minecraft:item_model": "minecraft:stone_hoe",
+            "minecraft:piercing_weapon": {},
+            "minecraft:enchantments": {
+              "mm:left_click": 1
+            },
+            "minecraft:enchantment_glint_override": false
+          }
+        },
+        {
+          "function": "minecraft:set_name",
+          "name": {
+            "translate": "mm.item.gun.rifle",
+            "color": "gold",
+            "italic": false
+          },
+          "target": "custom_name"
+        },
+        {
+          "function": "minecraft:set_lore",
+          "mode": "replace_all",
+          "lore": [
+            {
+              "translate": "mm.item.gun.rifle.description",
+              "color": "white",
+              "italic": false
+            },
+            "",
+            {
+              "translate": "mm.item.gun.description.ammo",
+              "color": "gray",
+              "italic": false,
+              "with": [
+                {
+                  "text": "64",
+                  "color": "green"
+                }
+              ]
+            },
+            {
+              "translate": "mm.item.gun.description.magazine_ammo",
+              "color": "gray",
+              "italic": false,
+              "with": [
+                {
+                  "text": "4",
+                  "color": "green"
+                }
+              ]
+            },
+            {
+              "translate": "mm.item.gun.description.fire_rate",
+              "color": "gray",
+              "italic": false,
+              "with": [
+                {
+                  "text": "0.20",
+                  "color": "green"
+                }
+              ]
+            },
+            {
+              "translate": "mm.item.gun.description.reload",
+              "color": "gray",
+              "italic": false,
+              "with": [
+                {
+                  "text": "1.50",
+                  "color": "green"
+                }
+              ]
+            },
+            {
+              "translate": "mm.item.gun.description.range",
+              "color": "gray",
+              "italic": false,
+              "with": [
+                {
+                  "text": "24",
+                  "color": "green"
+                }
+              ]
+            },
+            "",
+            {
+              "translate": "mm.item.gun.description.refill",
+              "color": "gray",
+              "italic": false,
+              "with": [
+                {
+                  "keybind": "key.attack",
+                  "color": "gold"
+                }
+              ]
+            },
+            {
+              "translate": "mm.item.gun.description.shoot",
+              "color": "gray",
+              "italic": false,
+              "with": [
+                {
+                  "keybind": "key.use",
+                  "color": "gold"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick"
+        }
+      ]
+    }
+  ]
+}
